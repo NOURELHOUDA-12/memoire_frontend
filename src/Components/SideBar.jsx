@@ -80,11 +80,11 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 const Array1 = [
   { text: "Dashboard", icon: <HomeOutlinedIcon />, path: "/" },
-  { text: "Manage Team", icon: <PeopleOutlinedIcon />, path: "/Tiques" },
+  { text: "Tiques", icon: <PeopleOutlinedIcon />, path: "/Tiques" },
   {
-    text: "Contacts Information",
+    text: "MachineLearning",
     icon: <ContactsOutlinedIcon />,
-    path: "/contacts",
+    path: "/MachineLearning",
   },
   {
     text: "Invoices Balances",
@@ -142,7 +142,7 @@ const SideBar = ({ open, handleDrawerClose }) => {
         align="center"
         sx={{ fontSize: open ? 17 : 0, transition: "0.25s" }}
       >
-       Tick classification
+       <strong>Hyalomma</strong>
       </Typography>
       <Typography
         align="center"
@@ -152,7 +152,7 @@ const SideBar = ({ open, handleDrawerClose }) => {
           color: theme.palette.info.main,
         }}
       >
-        Admin_Nour
+       Tick classification
       </Typography>
 
       <Divider />

@@ -8,22 +8,23 @@ import {
 
 import App from './App'
 import ReactDOM from "react-dom/client";
-import Dashboard from './page/dashboard/Dashboard'
-import Tiques from "./pages2/Tiques/Tiques";
-import PieChart from "./page/pieChart/PieChart";
-import BarChart from "./page/barChart/BarChart";
-import Geography from "./page/geography/Geography";
-import LineChart from "./page/lineChart/LineChart";
-
+import Dashboard from './page/Dashbord/Dashboard'
+import Tiques from "./page/Tiques/Tiques";
+import PieChart  from "./page/PieChart/PieChart";
+import BarChart from "./page/BarChart/BarChart";
+import Geography from "./page/Geography/Geography";
+import LineChart from "./page/LineChart/LineChart";
+import MachineLearning from './page/MachineLearning/MachineLearning'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Dashboard />} />
       <Route path="Tiques" element={<Tiques />} />
-      {/* <Route path="pie" element={<PieChart />} /> */}
+      <Route path="pie" element={<PieChart />} />
       <Route path="bar" element={<BarChart />} />
       <Route path="line" element={<LineChart />} />
-      {/* <Route path="geography" element={<Geography />} /> */}
+      <Route path="geography" element={<Geography />} />
+      <Route path="MachineLearning" element={<MachineLearning />} />
 
     </Route>
   )

@@ -3,7 +3,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import { rows } from "./Data";
 import { Box, Typography, useTheme } from "@mui/material";
 import { AdminPanelSettingsOutlined, LockOpenOutlined, SecurityOutlined } from "@mui/icons-material";
-
+import Header from "../../components/Header";
 
 
 const Tiques = () => {
@@ -18,8 +18,10 @@ const Tiques = () => {
 
         {
             field: 'Type', headerName: 'Type',
-            align: "center", flex: 1, headerAlign: "center"
-            , renderCell: ({ row: { Type } }) => {
+            flex: 1,
+            align: "center",
+            headerAlign: "center",
+             renderCell: ({ row: { Type } }) => {
                 return (
                     <Box
                         sx={{
@@ -67,7 +69,7 @@ const Tiques = () => {
     return (
         <div>
             <Box>
-      {/* <Header title={"TEAM"} subTitle={"Tick Managing "} /> */}
+      <Header title={"Tick"} subTitle={"Tick Managing "} />
 
       <Box sx={{ height: 600, mx: "auto" }}>
         <DataGrid

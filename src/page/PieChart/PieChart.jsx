@@ -1,9 +1,19 @@
 import React from "react";
-const Dashboard =()=>{
-    return (
-        <div>
-           Pie Chart page
-        </div>
-    )
-}
-export default Dashboard
+import { ResponsivePie } from "@nivo/pie";
+import { Box, useTheme } from "@mui/material";
+// @ts-ignore
+import Pie from "./Pie";
+import Header from "../../components/Header";
+
+const PieChart = () => {
+  const theme = useTheme();
+  return (
+    <Box>
+      <Header title="Pie Chart" subTitle="Simple Pie Chart" />
+
+      <Pie />
+    </Box>
+  );
+};
+
+export default PieChart;
