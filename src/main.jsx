@@ -15,6 +15,9 @@ import BarChart from "./page/BarChart/BarChart";
 import Geography from "./page/Geography/Geography";
 import LineChart from "./page/LineChart/LineChart";
 import MachineLearning from './page/MachineLearning/MachineLearning'
+import Tick_detection from './page/Tick_classification/detection'
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -25,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="line" element={<LineChart />} />
       <Route path="geography" element={<Geography />} />
       <Route path="MachineLearning" element={<MachineLearning />} />
+       <Route path="Tick_detection" element={<Tick_detection />} /> 
 
     </Route>
   )

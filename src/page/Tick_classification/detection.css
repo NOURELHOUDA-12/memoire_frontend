@@ -1,0 +1,81 @@
+/* Centrer le contenu de l'application */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Formulaire d'upload */
+form {
+  margin-bottom: 20px;
+}
+
+/* Bouton stylé */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Aperçu de l'image */
+.image-preview {
+  margin-top: 20px;
+  border: 2px dashed #ddd;
+  padding: 10px;
+  display: inline-block;
+}
+
+.image-preview img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le canevas où l'image recadrée sera affichée */
+canvas {
+  margin-top: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des prédictions */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+} */
+
+li strong {
+  color: #333;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  max-width: 400px; 
+  height: auto; 
+}

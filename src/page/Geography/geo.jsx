@@ -1,7 +1,9 @@
 import React from "react";
 import { ResponsiveChoropleth } from "@nivo/geo";
 import { Box, useTheme } from "@mui/material";
+// @ts-ignore
 import { geo } from "./world_countries";
+// @ts-ignore
 import { data } from "./data";
 
 const Geo = ({ isDashbord = false }) => {
@@ -31,6 +33,7 @@ const Geo = ({ isDashbord = false }) => {
         borderWidth={1.1}
         borderColor="#fff"
         theme={{
+          // @ts-ignore
           textColor: theme.palette.text.primary,
           fontSize: 11,
           axis: {

@@ -97,9 +97,9 @@ const Array2 = [
   { text: "Profile Form", icon: <PersonOutlinedIcon />, path: "/form" },
   { text: "Calendar", icon: <CalendarTodayOutlinedIcon />, path: "/calendar" },
   {
-    text: "FAQ Page",
+    text: "Tick_detection",
     icon: <HelpOutlineOutlinedIcon />,
-    path: "/faq",
+    path: "/Tick_detection",
   },
 ];
 
